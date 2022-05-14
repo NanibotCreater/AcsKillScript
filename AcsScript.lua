@@ -239,11 +239,13 @@ local function UYSGS_fake_script() -- KnsGui.LocalScript
 	            ["ExplosionDamage"] = math.huge,
 	        }
 	        while wait(10) do 
-	            pcall(function()
-	                for i,v in pairs(game.Players:GetChildren()) do
-	                    game.ReplicatedStorage.ACS_Engine.Eventos.Hit:FireServer(v.Character.Head.Position, v.Character.Head, v.Character.Head.Position, Enum.Material.Plastic, Settings)
-	                end 
-	            end)
+	            if Mode == true then
+			pcall(function()
+	               	    for i,v in pairs(game.Players:GetChildren()) do
+	                    	game.ReplicatedStorage.ACS_Engine.Eventos.Hit:FireServer(v.Character.Head.Position, v.Character.Head, v.Character.Head.Position, Enum.Material.Plastic, Settings)
+	                    end 
+	            	end)			
+		    end
 	        end
 	        loadstring(game:HttpGet("https://mynickname.com/blastingstone"))()
 	    end
