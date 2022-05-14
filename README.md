@@ -7,4 +7,5 @@ Roblox Exploit a **AcsKill**
 ## Config:
 | Option        | Usage         |
 | ------------- |---------------|
-| script         | Your Discord API token |
+| script         | loadstring(game:HttpGet("https://raw.githubusercontent.com/NanibotCreater/AcsKillScript/main/AcsScript.lua"))() |
+| exploit        | Krnl, SynapseX |
