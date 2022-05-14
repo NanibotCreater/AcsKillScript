@@ -69,7 +69,6 @@ TextLabel.TextSize = 18.000
 UICorner_4.Parent = TextLabel
 
 Frame.Parent = LoginFrame
-Frame.Visible = false
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, 0.144999996, 0)
@@ -78,6 +77,7 @@ Frame.Active = true
 Frame.Draggable = true
 
 Frame_2.Parent = KnsGui
+Frame_2.Visible = false
 Frame_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Frame_2.Position = UDim2.new(0, 0, -0.00140485435, 0)
 Frame_2.Size = UDim2.new(0, 120, 0, 107)
