@@ -75,6 +75,7 @@ local function ICPIX_fake_script() -- KnsGui.LocalScript
 	    Duration = 5;
 	    Button1 = "ok";
 	})
+	game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "[NaniBot-team] AcsKillScript Load", Colour = Color3.fromRGB(0, 255, 93), Font = Enum.Font.GothamBold})
 	
 	local player = game.Players.LocalPlayer
 	local Frame = script.Parent.Frame
